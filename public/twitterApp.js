@@ -11,13 +11,15 @@ var TwitterApp = React.createClass({
 	getInitialState: function(){
 		return{
 			tweets: [],
-			keyword: 'drumpf'
+			keyword: 'gummy bears'
 		} 
 	},
+
 	onKeywordSubmit: function(newKeyword){//just a function that exists- not a prop or a state- as is
 		this.setState({keyword: newKeyword});
 		this.loadTweetsFromServer(newKeyword);
 	},
+	
 	loadTweetsFromServer: function(keyword){
 		var self = this;
 		$.ajax({

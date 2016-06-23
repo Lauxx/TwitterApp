@@ -25,7 +25,7 @@ router.route('/:keyword') //defines an api endpoint :(colon) signifies a paramet
   				screen_name: tweet.user.screen_name, 
   				created_at: tweet.created_at, 
   				profile_img: tweet.user.profile_image_url,
-  				 }
+  				}
   		});
   			res.json(myTweetArr)
 		})
